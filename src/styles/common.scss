@@ -1,0 +1,394 @@
+/**
+ * 公共样式
+ */
+
+@charset "utf-8";
+
+/*初始化*/
+p, ul,li{
+  margin: 0;
+}
+/*公共面板*/
+
+/*不带标题的普通面板*/
+.global-panel{
+  padding: 32px;
+  background: #fff;
+  border-radius: 12px;
+  margin-bottom: 32px;
+  .container{
+    border-radius: 12px;
+    background: #F9F9FA;
+    padding: 32px;
+    margin-bottom: 24px;
+
+  }
+  /*最后一个区块无下边距使用此样式*/
+  .mb-none{
+    margin-bottom: 0;
+  }
+}
+
+/*带标题面板*/
+.global-header-panel{
+  padding: 32px 16px;
+  background: #fff;
+  border-radius: 12px;
+  margin-bottom: 32px;
+  .header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    align-items: center;
+    height: 32px;
+    .title{
+      font-size: 18px;
+      color: #333333;
+      border-left: 4px solid #4880FF;
+      padding: 0 12px;
+      font-weight: bold;
+      height: 18px;
+    }
+  }
+  /*面板里面的区块*/
+  .container{
+    border-radius: 12px;
+    background: #F9F9FA;
+    padding: 32px;
+    margin: 0 16px 24px 16px;
+
+  }
+  /*最后一个区块无下边距使用此样式*/
+  .mb-none{
+    margin-bottom: 0;
+  }
+}
+
+
+/*最后一个面板无下边距使用此样式*/
+.mb-none{
+  margin-bottom: 0;
+}
+
+/*撤回原因*/
+.returnInfo{
+  .title{
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 15px;
+  }
+  .info{
+    color: #333;
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 16px;
+  }
+}
+
+
+/*通用随访详情列表*/
+.detailInfoList{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  li{
+    width: 33.33%;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+
+    h3{
+      font-size: 14px;
+      color: #666666;
+      margin: 0 0 15px 0;
+      font-weight: normal;
+    }
+    .name{
+      color: #333;
+      font-size: 16px;
+      font-weight: bold;
+      >span{
+        margin-right: 16px;
+      }
+    }
+  }
+  /*病史等有输入框*/
+  .bingshi{
+    .name{
+      width: 80%;
+      .input{
+        margin-left: 24px;
+      }
+    }
+  }
+  /*备注*/
+  .remarks{
+      width: 100%;
+    line-height: 26px;
+  }
+  /*最后一排无下边距的list使用此样式*/
+  .mb-none{
+    margin-bottom: 0;
+  }
+
+}
+
+/*受访人/随访医生信息*/
+.followPeoList{
+  .title{
+    font-size: 16px;
+    color:#333;
+    margin:16px 0 24px 0;
+    display: flex;
+    justify-content: space-between;
+    height: 32px;
+    line-height: 32px;
+  }
+
+  .list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    li{
+      min-width: 156px;
+      border-radius: 8px;
+      background: #fff;
+      list-style: none;
+      margin:0 15px 15px 0;
+      padding: 12px;
+      display: flex;
+      .img{
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background: #eff6ff;
+        margin-right: 10px;
+      }
+      .about{
+        line-height: 20px;
+        h3{
+          font-size: 14px;
+          color: #666;
+          margin: 0;
+        }
+        span{
+          font-size: 12px;
+          color: #666;
+        }
+      }
+    }
+
+  }
+  .btnMore{
+    text-align: center;
+    border:1px solid #D4D4D4;
+    border-radius: 12px;
+    height: 56px;
+    line-height: 56px;
+    margin-top: 15px;
+  }
+  .listDoct{
+    padding-bottom: 15px;
+    height: auto;
+    li{
+      width:100%;
+      height: 58px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0;
+      .img{
+        flex: 0 0 auto;
+      }
+      .about{
+        flex: 1 1 auto;
+        .from{
+          font-size: 12px;
+          color: #666;
+        }
+      }
+
+      .changBtn{
+        width: 56px;
+        flex: 0 0 auto;
+      }
+    }
+  }
+}
+
+/*操作日志*/
+.opaLog{
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+
+
+/*页脚底部公共按钮*/
+.commonOpa{
+  padding: 40px 32px;
+  text-align: right;
+}
+
+/*分页*/
+.pageArea{
+  padding-top: 10px;
+  text-align: right;
+}
+.pageArea>div{
+  display: inline-block;
+}
+
+
+/*通用查询条件*/
+.serachArea{
+  display: flex;
+  margin-bottom: 24px;
+}
+.serachArea>div{
+  width: 270px;
+  margin-right: 32px;
+}
+/*通用级联选择*/
+.selectArea{
+  margin-bottom: 24px;
+  display: flex;
+}
+.selectArea>div{
+  width:20%;
+  margin-right: 24px;
+}
+/*通用按钮操作区*/
+.opaArea{
+  text-align: right;
+  margin-bottom: 32px;
+}
+
+/*通用筛选*/
+.stateArea{
+  display: flex;
+  margin-bottom: 24px;
+  .title{
+    font-size: 16px;
+    color: #666666;
+    width: 80px;
+    flex: 0 0 auto;
+  }
+  .list{
+    flex: 1 1 auto;
+    li{
+      display: inline-block;
+      font-size: 16px;
+      color: #222;
+      margin-right: 32px;
+    }
+    li:hover{
+      cursor: pointer;
+      font-weight: bold;
+    }
+    li.curr{
+      font-weight: bold;
+      cursor: text;
+    }
+  }
+}
+
+
+
+/*终止原因*/
+.stopReason{
+  .reason{
+    margin-bottom: 40px;
+  }
+
+  h3{
+    font-size: 14px;
+    color: #666;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    line-height: 26px;
+    margin: 0;
+  }
+  .img{
+    padding: 0;
+    margin: 16px 0 0 0;
+    li{
+      width: 100px;
+      height: 100px;
+      border-radius:8px ;
+      background: #eff6ff;
+      list-style: none;
+      margin: 0;
+      display: inline-block;
+      vertical-align: center;
+      margin: 0 24px 24px 0;
+    }
+
+  }
+}
+/*上报原因*/
+.reportReasons{
+
+  h3{
+    font-size: 14px;
+    color: #666;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    line-height: 26px;
+    margin: 0;
+  }
+  .img{
+    padding: 0;
+    margin: 16px 0 0 0;
+    li{
+      width: 100px;
+      height: 100px;
+      border-radius:8px ;
+      background: #eff6ff;
+      list-style: none;
+      margin: 0;
+      display: inline-block;
+      vertical-align: center;
+      margin: 0 24px 24px 0;
+    }
+
+  }
+}
+
+
+/*随访内容*/
+.followName{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/*满意度调查内容*/
+.followSatisfaction{
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #333;
+  margin: 0;
+}

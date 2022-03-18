@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title><%= VUE_APP_TITLE %></title>
+    <meta
+      name="keywords"
+      content="SG"
+    />
+    <meta
+      name="description"
+      content="<%= VUE_APP_TITLE %>基于SG构建"
+    />
+    <meta name="author" content="<%= VUE_APP_AUTHOR %>" />
+    <link rel="stylesheet" href="<%= BASE_URL %>static/css/loading.css" />
+    <style>
+         .first-loading-wrp img{
+              width: auto;
+              height: auto;
+              max-width: 40vh;
+              max-height: 40vh;
+              z-index: 8888;
+          }
+          .yale{
+            top: 0;
+            right: 0;
+            position: absolute;
+            height: 10vh;
+            z-index: 9999;
+            background-color: black;
+          }
+
+    </style>
+  </head>
+  <body>
+    <noscript>
+      非常抱歉鉴于安全考量,您无法查看<%= VUE_APP_TITLE %>
+      源代码，该系统基于SG开发
+    </noscript>
+    <div id="vue-admin-beautiful">
+      <div class="first-loading-wrp">
+        <div class="mylogodiv">
+          <img src="static/ElementProgress.png"/>
+          <div class="yale">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      /^http(s*):\/\//.test(location.href) ||
+        alert("基于SG开发的项目需要部署到服务器下访问");
+    </script>
+  </body>
+</html>
