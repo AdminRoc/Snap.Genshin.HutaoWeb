@@ -88,4 +88,7 @@
     border-radius: 5px;
     margin-bottom: 5px;
   }
+  ::v-deep .el-avatar > img{
+    background-color: #FFFFFF;
+  }
 </style>

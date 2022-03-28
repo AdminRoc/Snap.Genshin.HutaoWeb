@@ -16,9 +16,9 @@
       <el-tab-pane label="圣遗物搭配" name="5">
         <relics></relics>
       </el-tab-pane>
-      <el-tab-pane label="队伍出场" name="6">
-       <!-- <comeOnStage></comeOnStage> -->
-      </el-tab-pane>
+      <!-- <el-tab-pane label="队伍出场" name="6">
+       <comeOnStage></comeOnStage>
+      </el-tab-pane> -->
     </el-tabs>
 
   </div>
@@ -36,7 +36,7 @@
   //圣遗物分配
   import relics from "@/components/Relics/index"
   //出场
-  import comeOnStage from "@/components/ComeOnStage/index"
+  //import comeOnStage from "@/components/ComeOnStage/index"
   export default {
     name: "index",
     components: {
@@ -45,7 +45,7 @@
       roleCollocation,
       weaponAssignment,
       relics,
-      comeOnStage
+      //comeOnStage
     },
     data() {
       return {
@@ -55,6 +55,10 @@
       };
     },
     created() {
+      this.$store
+        .dispatch("user/login")
+        .then((res) => {
+        })
     },
     mounted() {},
     methods: {

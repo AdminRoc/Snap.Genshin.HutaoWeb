@@ -71,7 +71,10 @@ const actions = {
   },
   async login({ commit }) {
     console.log("执行登录")
-    let data = await login({});
+    let data = await login({
+"Appid":"08da041a-1722-4c50-85f8-5e9b4c569785",
+"Secret":"PS/xFefaKWQNPpEbNWSJjXmHUMwyD/S579DNW9RiuGE="
+});
     if (data.data.accessToken) {
       commit("setAccessToken", data.data.accessToken);
     }

@@ -27,7 +27,7 @@ router.beforeResolve(async (to, from, next) => {
 
   if (!loginInterception) hasToken = true;
   if (hasToken) {
-    if (to.path === "/login") {
+    if (to.path === "/index") {
       next({ path: "/" });
       if (progressBar) VabProgress.done();
     } else {
@@ -69,9 +69,9 @@ router.beforeResolve(async (to, from, next) => {
       next();
     } else {
       if (recordRoute) {
-        next(`/login?redirect=${to.path}`);
+        next(`/index?redirect=${to.path}`);
       } else {
-        next("/login");
+        next("/index");
       }
 
       if (progressBar) VabProgress.done();

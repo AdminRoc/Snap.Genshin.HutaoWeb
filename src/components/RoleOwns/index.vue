@@ -66,4 +66,7 @@
     align-items: center;
     font-weight: 600;
   }
+  ::v-deep .el-avatar > img{
+    background-color: #FFFFFF;
+  }
 </style>

@@ -104,4 +104,7 @@
   ::v-deep .el-card {
     border-radius: 8px;
   }
+  ::v-deep .el-avatar > img{
+    background-color: #FFFFFF;
+  }
 </style>
